@@ -1,5 +1,34 @@
 ﻿{
-  "Routes": [],
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/v1/greeter/{name}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5260
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ingredient/hello/{name}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/greeter/{name}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe/hello/{name}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    }
+  ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:9876"
   }
