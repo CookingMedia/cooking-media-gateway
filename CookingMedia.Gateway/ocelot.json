@@ -1,6 +1,20 @@
 ﻿{
   "Routes": [
     {
+      "DownstreamPathTemplate": "/v1/auth/{name}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5390
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/{name}",
+      "UpstreamHttpMethod": [
+        "Post"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/v1/greeter/{name}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -12,7 +26,10 @@
       "UpstreamPathTemplate": "/api/ingredient/hello/{name}",
       "UpstreamHttpMethod": [
         "Get"
-      ]
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
     },
     {
       "DownstreamPathTemplate": "/v1/greeter/{name}",
@@ -26,7 +43,10 @@
       "UpstreamPathTemplate": "/api/recipe/hello/{name}",
       "UpstreamHttpMethod": [
         "Get"
-      ]
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
     }
   ],
   "GlobalConfiguration": {
