@@ -89,6 +89,137 @@
       "UpstreamHttpMethod": [
         "Get", "POST"
       ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/recipes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipes",
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipes/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipes/{id}",
+      "UpstreamHttpMethod": [
+        "Put", "Delete"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipes",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipes/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipes/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/amounts",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipeAmounts",
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/amounts/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipeAmounts/{id}",
+      "UpstreamHttpMethod": [
+        "Put", "Delete"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/steps",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipeSteps",
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/steps/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipeSteps/{id}",
+      "UpstreamHttpMethod": [
+        "Put", "Delete"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
     }
   ],
   "GlobalConfiguration": {
