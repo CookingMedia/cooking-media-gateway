@@ -47,6 +47,48 @@
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "ServerToken"
       }
+    },
+    {
+      "DownstreamPathTemplate": "/v1/ingredient/{path}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5260
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ingredient/{path}",
+      "UpstreamHttpMethod": [
+        "Get", "PUT", "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/ingredient",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5260
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ingredient",
+      "UpstreamHttpMethod": [
+        "Get", "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/ingredient-categories",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5260
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ingredient-categories",
+      "UpstreamHttpMethod": [
+        "Get", "POST"
+      ]
     }
   ],
   "GlobalConfiguration": {
