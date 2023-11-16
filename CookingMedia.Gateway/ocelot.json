@@ -59,7 +59,9 @@
       ],
       "UpstreamPathTemplate": "/api/ingredient/{path}",
       "UpstreamHttpMethod": [
-        "Get", "PUT", "DELETE"
+        "Get",
+        "PUT",
+        "DELETE"
       ]
     },
     {
@@ -73,7 +75,8 @@
       ],
       "UpstreamPathTemplate": "/api/ingredient",
       "UpstreamHttpMethod": [
-        "Get", "POST"
+        "Get",
+        "POST"
       ]
     },
     {
@@ -87,7 +90,8 @@
       ],
       "UpstreamPathTemplate": "/api/ingredient-categories",
       "UpstreamHttpMethod": [
-        "Get", "POST"
+        "Get",
+        "POST"
       ]
     },
 
@@ -119,7 +123,8 @@
       ],
       "UpstreamPathTemplate": "/api/recipes/{id}",
       "UpstreamHttpMethod": [
-        "Put", "Delete"
+        "Put",
+        "Delete"
       ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "ServerToken"
@@ -181,7 +186,8 @@
       ],
       "UpstreamPathTemplate": "/api/recipeAmounts/{id}",
       "UpstreamHttpMethod": [
-        "Put", "Delete"
+        "Put",
+        "Delete"
       ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "ServerToken"
@@ -215,7 +221,200 @@
       ],
       "UpstreamPathTemplate": "/api/recipeSteps/{id}",
       "UpstreamHttpMethod": [
-        "Put", "Delete"
+        "Put",
+        "Delete"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/cooking-methods",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/cooking-methods",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/cooking-methods/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/cooking-methods/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/cooking-methods",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/cooking-methods",
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/cooking-methods/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/cooking-methods/{id}",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Delete"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/recipe-categories",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-categories",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipe-categories/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-categories/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipe-categories",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-categories",
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipe-categories/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-categories/{id}",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Delete"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/recipe-styles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-styles",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipe-styles/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-styles/{id}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipe-styles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-styles",
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ServerToken"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/recipe-styles/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5130
+        }
+      ],
+      "UpstreamPathTemplate": "/api/recipe-styles/{id}",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Delete"
       ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "ServerToken"
