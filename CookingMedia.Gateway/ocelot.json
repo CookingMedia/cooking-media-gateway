@@ -5,13 +5,13 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_authentication_api",
           "Port": 5390
         }
       ],
       "UpstreamPathTemplate": "/api/auth/{name}",
       "UpstreamHttpMethod": [
-        "Post"
+        "Post", "Get"
       ]
     },
     {
@@ -53,7 +53,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_ingredient_api",
           "Port": 5260
         }
       ],
@@ -69,7 +69,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_ingredient_api",
           "Port": 5260
         }
       ],
@@ -84,7 +84,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_ingredient_api",
           "Port": 5260
         }
       ],
@@ -100,7 +100,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -117,7 +117,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -135,7 +135,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -149,7 +149,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -163,7 +163,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -180,7 +180,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -198,7 +198,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -215,7 +215,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -234,7 +234,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -248,7 +248,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -262,7 +262,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -279,7 +279,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -298,7 +298,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -312,7 +312,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -326,7 +326,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -343,7 +343,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -362,7 +362,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -376,7 +376,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -390,7 +390,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],
@@ -407,7 +407,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "cm_recipe_api",
           "Port": 5130
         }
       ],

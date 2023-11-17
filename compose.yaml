@@ -1,0 +1,18 @@
+name: cookingmedia_gateway
+services:
+  server:
+    image: cm_gateway
+    container_name: cm_gateway
+    build:
+      context: .
+      dockerfile: CookingMedia.Gateway/Dockerfile
+    ports:
+      - 9876:9876
+    environment:
+      - ASPNETCORE_URLS=http://+:9876
+      - Kestrel__Endpoints__Http__Url=http://*:9876
+    networks:
+      - default
+networks:
+  default:
+    name: cm_network
